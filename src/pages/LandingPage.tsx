@@ -23,7 +23,7 @@ function LandingPage() {
            <ContactUs />
         </main>
 
-        <footer className="w-full bg-white items-center px-10">
+        <footer className="w-full flex bg-white items-center px-10">
             <Footer />
         </footer>
     </html>

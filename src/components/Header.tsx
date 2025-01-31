@@ -17,19 +17,19 @@ const Header: React.FC = () => {
       <div>
         <ul className="hidden xl:flex items-center gap-10 font-semibold text-xl text-[#3B556D] h-full">
             <li className="hover:animate-bounce hover:text-2xl transition-[150] hover:text-[#0B162C]">
-                <a href="#">Presentaion</a>
+                <a href="#presentation">Presentaion</a>
             </li>
 
             <li className="hover:animate-bounce hover:text-2xl hover:text-[#0B162C] h-full"> 
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
 
             <li className="hover:animate-bounce hover:text-2xl hover:text-[#0B162C] h-full">
-                <a href="#">Creations</a>
+                <a href="#creation">Creations</a>
             </li>
 
             <li className="hover:animate-bounce hover:text-2xl hover:text-[#0B162C] h-full">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 
@@ -42,19 +42,19 @@ const Header: React.FC = () => {
            transform transition-transform ${isOpen ? "opacity-100":"opacity-0"} `}>
             
             <li className="list-none w-full text-center p-4 hover:bg-black hover:text-white transition-all cursor-pointer">
-                <a href="#">Presentaion</a>
+                <a href="#presentation">Presentaion</a>
             </li>
 
             <li className="list-none w-full text-center p-4 hover:bg-black hover:text-white transition-all cursor-pointer"> 
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
 
             <li className="list-none w-full text-center p-4 hover:bg-black hover:text-white transition-all cursor-pointer">
-                <a href="#">Creations</a>
+                <a href="#creation">Creations</a>
             </li>
 
             <li className="list-none w-full text-center p-4 hover:bg-black hover:text-white transition-all cursor-pointer">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
 
         </div>

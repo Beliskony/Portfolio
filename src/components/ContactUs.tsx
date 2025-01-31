@@ -21,15 +21,15 @@ const ContactUs = () => {
     }
 
   return (
-    <section id='contact' className='bg-[#0B162C] flex flex-row w-full justify-center items-center py-5 px-20'>
-        <div className="w-[50%] justify-center items-center text-center space-y-5 px-10">
-             <h3 className="underline text-white text-5xl">Contactez-moi</h3>
-             <p className="text-white text-wrap text-base">Faite nous part de vos attentes, vos envies ou meme parlez nous d'un projet web que vous souhaitez concretiser</p>
-             <h2 className="text-white font-extrabold text-xl underline">Votre satisfaction une priorite</h2>
+    <section id='contact' className='bg-[#0B162C] flex flex-row w-full justify-center items-center py-5 px-20 max-sm:flex-col max-sm:px-1 max-sm:gap-y-3'>
+        <div className="w-[50%] justify-center items-center text-center space-y-5 px-10 max-sm:px-0 max-sm:w-full">
+             <p className="text-white text-wrap text-base">Faite nous part de vos attentes, vos envies ou même parlez nous d'un projet web que vous souhaitez concrétiser</p>
+             <h2 className="text-white font-extrabold text-xl underline">Votre satisfaction une priorité</h2>
         </div>
 
-        <div className="w-[50%] justify-center items-center bg-[#EBF2FA] p-5 rounded-xl flex flex-col">
-            <form onSubmit={envoie} className="bg-white rounded-2xl space-y-4 py-10 px-4 text-center flex flex-col justify-center items-left">
+        <div className="w-[50%] justify-center items-center bg-[#EBF2FA] p-5 rounded-xl flex flex-col max-sm:w-full max-sm:gap-y-5">
+            <h3 className="underline text-5xl text-[#0B162C]">Contactez-moi</h3>
+            <form onSubmit={envoie} className="bg-white rounded-2xl space-y-4 py-10 px-4 text-center flex flex-col justify-center items-left max-sm:w-full max-sm:gap-y-5">
                 <input type="text"
                        name="nom"
                        placeholder="Votre nom"
@@ -54,12 +54,12 @@ const ContactUs = () => {
                        required />
 
                 <textarea name="message" placeholder="Votre message" value={formData.message} onChange={handleChange}
-                 className="w-96 h-36 p-2 border-4 border-[#0B162C] rounded-md">
+                 className="w-96 h-36 p-2 border-4 border-[#0B162C] rounded-md max-sm:w-full">
 
                 </textarea>
 
                 <button type="submit" className="w-40 h-10 text-white font-bold bg-[#0B162C] rounded-2xl
-                hover:bg-[#5FC2BA] hover:text-[#0B162C] mx-28">
+                hover:bg-[#5FC2BA] hover:text-[#0B162C] mx-28 max-sm:mx-20">
                     Envoyer
                 </button>
 
