@@ -29,11 +29,11 @@ export default function Footer() {
         </div>
 
         <div className='w-[30%] flex flex-row gap-x-5 justify-center max-sm:w-full max-sm:gap-x-10'>
-              <a href='#'>
+              <a href='https://www.facebook.com/axel.nguessan.167'>
                 <img src='/images/facebook.png' className='h-10 w-10'/>
               </a>
 
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/axel-sylvain-n-guessan-a46661291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
                 <img src='/images/linkedin.png' className='h-10 w-10'/>
               </a>
 
