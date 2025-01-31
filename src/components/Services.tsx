@@ -11,12 +11,12 @@ function Services() {
     return () => clearTimeout(timer)
   }, [])
   return (
-    <section id='services' className='w-full mb-5 py-20 px-20 bg-[#EBF2FA] flex flex-col justify-center items-center border-t-2 border-[#0B162C] max-sm:px-5 max-sm:py-10'>
+    <section id='services' className='w-full mb-5 py-20 px-20 bg-[#EBF2FA] flex flex-col justify-center items-center border-t-2 border-[#0B162C] md:px-1 max-sm:px-5 max-sm:py-10'>
         <div className="w-full text-center text-5xl mb-10 max-sm:text-3xl max-sm:font-bold">
            <h2 className="underline text-[#0B162C]">Que faisons nous ?</h2>
         </div>
 
-        <div className="flex flex-row w-full justify-center items-center space-x-5 max-sm:w-full max-sm:flex-col max-sm:space-y-5 max-sm:space-x-0">
+        <div className="flex flex-row w-full justify-center items-center space-x-5 max-sm:w-full max-sm:flex-col md:space-y-4 md:space-x-0 md:gap-5 md:grid md:grid-cols-2 max-sm:space-y-5 max-sm:space-x-0">
         <motion.div
         className="flex justify-center"
         initial={{ x: "-100%" }}

@@ -2,11 +2,11 @@ import Creation from "./boite/Creation"
 
 function CreationSection() {
   return (
-    <section id="creation" className="w-full px-20 my-10 max-sm:px-1">
+    <section id="creation" className="w-full px-20 my-10 max-sm:px-1 md:px-1">
       
       <h2 className="text-3xl font-bold underline text-center my-10">Quelques inspirations & projets</h2>
        
-       <div className="w-full flex flex-wrap grid-cols-4 justify-center item-center space-y-10 gap-y-5 gap-x-5 max-sm:space-y-5">
+       <div className="w-full flex flex-wrap grid-cols-4 justify-center item-center space-y-10 gap-y-5 md:grid-cols-2 gap-x-5 max-sm:space-y-5">
 
          <Creation image="https://i.pinimg.com/736x/3f/7f/1e/3f7f1e9486dc3acc9b196ae5c5155ffe.jpg"
                    textExplicatif="Lorem ipsum dolor sit amet. Et nihil autem aut earum dicta est voluptatem quia ad dolorum pariatur. Sed 

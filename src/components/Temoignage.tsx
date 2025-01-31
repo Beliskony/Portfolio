@@ -56,7 +56,7 @@ function Temoignage() {
 
             <div className="embla__slide">
                 <TemBox nom="Kimmy"
-                    image="https://i.pinimg.com/474x/fc/2e/f8/fc2ef8327d29c1d34bf1f97b25efbf68.jpg"
+                    image="https://i.pinimg.com/236x/58/b0/c3/58b0c3244f9c76134d018f89c5fc454b.jpg"
                     texte="Lorem ipsum dolor sit amet. Et nihil autem aut earum dicta est voluptatem quia ad dolorum pariatur. Sed 
                            omnis nobis est iste cupiditate aut facilis ipsum"
                     bg="#5FC2BA"/>
@@ -64,7 +64,7 @@ function Temoignage() {
 
             <div className="embla__slide">
                 <TemBox nom="Franck"
-                    image="https://i.pinimg.com/474x/fc/2e/f8/fc2ef8327d29c1d34bf1f97b25efbf68.jpg"
+                    image="https://i.pinimg.com/236x/e9/f1/ac/e9f1ac1be3e35d62c72f2118af3da92d.jpg"
                     texte="Lorem ipsum dolor sit amet. Et nihil autem aut earum dicta est voluptatem quia ad dolorum pariatur. Sed 
                            omnis nobis est iste cupiditate aut facilis ipsum"
                     bg="#FFFFFF"/>

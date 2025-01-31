@@ -36,7 +36,7 @@ function SectionUn() {
           text-fill-color: transparent;
         }
       `}</style>
-      <section id="presentation" className="bg-[url('/images/bgOne.png')] object-cover bg-cover bg-top h-[650px] w-full px-20 justify-between flex flex-row items-start max-sm:px-5 max-sm:h-[400px] max-sm:items-start max-sm:bg-left">
+      <section id="presentation" className="bg-[url('/images/bgOne.png')] object-cover bg-cover bg-top h-[650px] w-full px-20 justify-between flex flex-row items-start md:px-2 max-sm:px-5 max-sm:h-[400px] max-sm:items-start max-sm:bg-left">
         <motion.div
           className="h-full flex flex-col items-center justify-center my-14 space-y-5 max-sm:mt-16"
           initial={{ opacity: 0, y: 50 }}
@@ -44,7 +44,7 @@ function SectionUn() {
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <motion.h3
-            className="text-5xl text-[#1C2942] font-bold my-5 max-sm:text-2xl"
+            className="text-5xl text-[#1C2942] font-bold my-5 max-sm:text-2xl md:text-3xl"
             initial={{ opacity: 0, x: -50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 4, delay: 0.2 }}
@@ -61,7 +61,7 @@ function SectionUn() {
             <span className="text-5xl font-bold gradient-text max-sm:text-3xl text-wrap">N'Guessan Axel. S</span>
           </motion.p>
           <motion.p
-            className="text-center font-bold text-5xl my-2 text-[#1C2942] max-sm:text-3xl"
+            className="text-center font-bold text-5xl my-2 text-[#1C2942] max-sm:text-3xl md:text-3xl"
             initial={{ opacity: 0, y: 50 }}
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 6, delay: 0.6 }}
