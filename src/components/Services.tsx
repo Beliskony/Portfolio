@@ -16,7 +16,7 @@ function Services() {
            <h2 className="underline text-[#0B162C]">Que faisons nous ?</h2>
         </div>
 
-        <div className="flex flex-row w-full justify-center items-center space-x-5 max-sm:w-full max-sm:flex-col md:space-y-4 md:space-x-0 md:gap-5 md:grid md:grid-cols-2 max-sm:space-y-5 max-sm:space-x-0">
+        <div className="flex flex-row w-full justify-center items-center space-x-5 max-sm:w-full max-sm:flex-col max-md:space-y-4 max-md:space-x-0 md:gap-5 md:grid min-md:grid-cols-2 lg:grid-cols-3 max-sm:space-y-5 max-sm:space-x-0">
         <motion.div
         className="flex justify-center"
         initial={{ x: "-100%" }}

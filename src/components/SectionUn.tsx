@@ -36,7 +36,7 @@ function SectionUn() {
           text-fill-color: transparent;
         }
       `}</style>
-      <section id="presentation" className="bg-[url('/images/bgOne.png')] object-cover bg-cover bg-top h-[650px] w-full px-20 justify-between flex flex-row items-start md:px-2 max-sm:px-5 max-sm:h-[400px] max-sm:items-start max-sm:bg-left">
+      <section id="presentation" className="bg-[url('/images/bgOne.png')] object-cover bg-cover bg-top h-[650px] w-full px-2 justify-between flex flex-row items-start max-md:px-20 max-sm:px-5 max-sm:h-[400px] max-sm:items-start max-sm:bg-left">
         <motion.div
           className="h-full flex flex-col items-center justify-center my-14 space-y-5 max-sm:mt-16"
           initial={{ opacity: 0, y: 50 }}

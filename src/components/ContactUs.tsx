@@ -27,7 +27,7 @@ const ContactUs = () => {
              <h2 className="text-white font-extrabold text-xl underline">Votre satisfaction une priorité</h2>
         </div>
 
-        <div className="w-[40%] justify-center items-center bg-white p-5 rounded-xl flex flex-col md:w-[60%] max-sm:w-full max-sm:gap-y-5">
+        <div className="w-[40%] justify-center items-center bg-white p-5 rounded-xl flex flex-col md:w-[60%] max-sm:w-full max-sm:gap-y-5 lg:w-[40%]">
             <h3 className="text-4xl font-extrabold text-[#0B162C]">Contactez-moi</h3>
             <form onSubmit={envoie} className="rounded-2xl w-full space-y-4 py-10 px-4 text-center flex flex-col justify-center items-left max-sm:w-full max-sm:gap-y-5">
               <div className="flex flex-col text-left">
