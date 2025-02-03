@@ -2,7 +2,7 @@
 const PourquoiNous = () => {
     return (
         <section className="w-full justify-center items-center bg-white  flex flex-row py-20 px-20 md:flex-row md:px-5 lg:flex-row max-sm:flex-col max-sm:px-5 max-sm:gap-y-10">
-          <div className="w-[60%] flex flex-col text-left justify-between items-center gap-y-5 md:w-[70%] max-sm:w-full">
+          <div className="w-[60%] flex flex-col text-left justify-between items-center gap-y-5 md:w-[70%] max-sm:w-full lg:px-10">
                 <h1 className="text-3xl w-full text-left font-bold text-[#0B162C] underline max-sm:text-xl">Pourquoi choisir Digital-Gick ?</h1>
                 <div className="flex flex-col justify-center items-left w-full">
                     <p className="w-[75%] text-left">Lorem ipsum dolor sit amet. Ut veritatis iste cum commodi nostrum ut rerum inventore! Sed omnis nemo
