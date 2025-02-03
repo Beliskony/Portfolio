@@ -8,11 +8,14 @@ interface Competences{
 
 const CompetencesBox: React.FC<Competences> = ({nom,image,texte}) => {
   return (
-    <div className="h-96 w-52 flex flex-col mx-2 bg-[#0B162C] text-center items-center justify-center rounded-tl-2xl rounded-br-2xl space-y-9 
-    max-sm:h-[440px] max-sm:w-36">
-      <img src={image} sizes="15" className="bg-white rounded-full p-3 max-sm:p-1"/>
-      <h3 className="text-xl items-center h-10 w-full font-medium text-[#3B556D] p-1 bg-white max-sm:h-10 max-sm:text-lg">{nom}</h3>
-      <p className="text-wrap text-center font-light text-[#FFFFFF] px-1">{texte}</p>
+    <div className="flex justify-center items-center space-y-5 flex-col h-60 w-60 bg-[#0B162C] max-sm:w-full max-sm:px-5 hover:bg-[#0C0F0A]
+    hover:shadow-2xl hover:text-[#0B162C]">
+
+      <div className=" flex flex-row text-center items-center justify-center px-5 shadow-2xl">
+        <img src={image} sizes="20" className="rounded-full max-sm:p-1 max-sm:h-16 max-sm:w-16"/>
+        <h3 className="text-xl items-center font-medium text-white p-1 max-sm:h-10 max-sm:text-2xl">{nom}</h3>
+      </div>
+        <p className="text-wrap text-center font-light text-[#FFFFFF] text-sm px-1">{texte}</p>
       
     </div>
   )

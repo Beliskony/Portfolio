@@ -4,7 +4,7 @@ function CreationSection() {
   return (
     <section id="creation" className="w-full px-20 my-10 max-sm:px-1 md:px-1">
       
-      <h2 className="text-3xl font-bold underline text-center my-10">Quelques inspirations & projets</h2>
+      <h2 className="font-bold underline text-center my-10 md:text-3xl lg:text-[50px]">Quelques inspirations & projets</h2>
        
        <div className="w-full grid justify-center item-center space-y-10 gap-y-5 md:grid-cols-2 lg:grid-cols-3 lg:px-20 lg:gap-x-3 gap-x-5 max-sm:space-y-5">
 

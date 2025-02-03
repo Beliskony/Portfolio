@@ -7,7 +7,7 @@ function Temoignage() {
     const [emblaRef] = useEmblaCarousel({loop: true})
   return (
     <section className="w-full flex flex-col bg-[#0B162C] justify-center items-center py-10 px-10 max-sm:text-center max-sm:px-6">
-        <h3 className="text-4xl font-bold text-[#FFFFFF] my-5">Le retour de certains de nos clients sur nous !</h3>
+        <h3 className="text-3xl font-bold text-[#FFFFFF] my-5 md:text-3xl lg:text-[50px] text-center">Le retour de certains de nos clients sur nous !</h3>
         <p className="text-base text-white">Lorem ipsum dolor sit amet. Et nihil autem aut earum dicta est voluptatem quia ad dolorum pariatur. Sed 
             omnis nobis est iste cupiditate aut facilis ipsum.</p>
 
