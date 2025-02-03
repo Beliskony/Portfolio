@@ -3,6 +3,7 @@ import CreationSection from "../components/CreationSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import PourquoiNous from "../components/PourquoiNous"
+import RoadMap from "../components/RoadMap"
 import SectionUn from "../components/SectionUn"
 import Services from "../components/Services"
 import SkillsSection from "../components/SkillsSection"
@@ -19,6 +20,7 @@ function LandingPage() {
            <SectionUn />
            <Services />
            <SkillsSection />
+           <RoadMap />
            <Temoignage />
            <CreationSection />
            <PourquoiNous />
