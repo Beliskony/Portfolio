@@ -23,8 +23,10 @@ function CreationSection() {
           {image:"https://i.pinimg.com/736x/d2/43/0c/d2430c7a2b9300e369ab9a2a47cb37d7.jpg",textExplicatif:"Lorem ipsum dolor sit amet. Et nihil autem aut earum dicta est voluptatem quia ad dolorum pariatur. Sed omnis nobis est iste cupiditate aut facilis ipsum"}
   
         ].map((creation, index) => (
-          <motion.div key={index} className="flex w-full justify-center md:px-1 lg:px-1 2xl:px-2" 
-           initial={{opacity: 0, x: -50}} animate={isInView ? {opacity: 1, x: 0 }: {}} transition={{
+          <motion.div key={index} className="flex w-full justify-center items-center md:px-1 lg:px-1 2xl:px-2 max-sm:px-5" 
+           initial={{opacity: 0, x: -50}} 
+           animate={isInView ? {opacity: 1, x: 0 }: {}} 
+          transition={{
            duration: 0.5,
            delay: index * 0.3,
            ease: "easeOut",
