@@ -16,7 +16,7 @@ function SkillsSection() {
       className="w-full my-20 flex flex-col justify-center items-center border-[#0B162C] lg:px-5 max-sm:px-5 md:px-1">
 
       <div className="w-full text-center mb-10">
-        <h2 className="underline text-[#0B162C] font-bold lg:text-[50px] md:text-3xl">Compétences</h2>
+        <h2 className="underline text-[#0B162C] font-bold lg:text-[50px] lg:text-4xl md:text-3xl max-sm:text-3xl">Compétences</h2>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 max-sm:grid-cols-1 gap-y-5 gap-x-2">
         {[
@@ -38,8 +38,7 @@ function SkillsSection() {
               duration: 0.5,
               delay: index * 0.3,
               ease: "easeOut",
-            }}
-          >
+            }}>
             <CompetencesBox nom={skill.nom} image={skill.image} texte={skill.texte} />
           </motion.div>
         ))}

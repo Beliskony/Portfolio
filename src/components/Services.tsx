@@ -12,8 +12,8 @@ function Services() {
   }, [])
   return (
     <section id='services' className='w-full mb-5 py-20 px-20 bg-white flex flex-col justify-center items-center border-t-2 border-[#0B162C] md:px-10 max-sm:px-5 max-sm:py-10'>
-        <div className="w-full text-center  font-bold mb-10 max-sm:text-3xl max-sm:font-bold">
-           <h2 className="underline text-[#0B162C] lg:text-[50px] md:text-3xl">Que faisons nous ?</h2>
+        <div className="w-full text-center  font-bold mb-10 max-sm:font-bold">
+           <h2 className="underline text-[#0B162C] lg:text-[50px] md:text-3xl max-sm:text-3xl">Que faisons nous ?</h2>
         </div>
 
     <div className="flex flex-col w-full justify-center items-center bg-white md:gap-y-5">
@@ -60,7 +60,7 @@ function Services() {
           duration: 5,
         }}>              
             <ServicesBox  nom="Site E-commerce"
-                          image="https://i.pinimg.com/736x/e8/e3/34/e8e33496617fa46036ddfce033bf34bb.jpg"
+                          image="https://i.pinimg.com/736x/e6/d5/9f/e6d59f36d2765bdcf04954f9258208c4.jpg"
                           texte="Un site eCommerce est un site web qui permet de vendre des produits ou services en ligne. Il offre une plateforme 
                                  permettant aux entreprises et aux particuliers de présenter leurs produits, gérer les commandes, traiter les paiements, 
                                  et livrer les articles à leurs clients. Les sites eCommerce peuvent être aussi bien simples que complexes, selon la 

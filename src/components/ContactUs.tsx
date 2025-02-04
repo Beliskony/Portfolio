@@ -22,7 +22,7 @@ const ContactUs = () => {
 
   return (
     <section id='contact' className='bg-[#0B162C] flex flex-row w-full justify-center items-center py-5 px-20 md:px-10 max-sm:flex-col max-sm:px-1 max-sm:gap-y-3'>
-        <div className="w-[50%] justify-center items-center text-center space-y-5 px-10 max-sm:px-0 max-sm:w-full">
+        <div className="w-[50%] justify-center items-center text-center space-y-5 px-10 max-sm:px-0 max-sm:w-full max-sm:py-5">
              <p className="text-white text-wrap text-base">Faite nous part de vos attentes, vos envies ou même parlez nous d'un projet web que vous souhaitez concrétiser</p>
              <h2 className="text-white font-extrabold text-xl underline">Votre satisfaction une priorité</h2>
         </div>

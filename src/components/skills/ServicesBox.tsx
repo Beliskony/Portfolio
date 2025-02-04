@@ -23,7 +23,7 @@ const ServicesBox: React.FC<Services> = ({nom,image,texte,chiffre,ligne}) => {
         <p className="text-left text-base w-[80%] font-medium text-[#1C2942] max-sm:text-sm max-sm:w-full md:w-full">{texte}</p>
       </div>
         
-      <div className=" flex text-[420px] w-[35%] mx-10 border justify-center font-bold leading-none max-sm:text-[200px] max-sm:mx-1 max-sm:w-[50%] md:text-[300px] " 
+      <div className=" flex text-[420px] w-[70%] mx-10 border justify-center font-bold leading-none max-sm:text-[200px] max-sm:mx-1 max-sm:w-[80%] md:text-[300px] " 
         style={{backgroundImage: `url(${image})`,WebkitBackgroundClip: "text",backgroundClip: "text",color: "transparent",backgroundSize: "cover",backgroundPosition: "center",
         WebkitTextStroke: "3px black"}}>
   

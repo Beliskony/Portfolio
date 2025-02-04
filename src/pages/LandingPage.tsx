@@ -2,6 +2,7 @@ import ContactUs from "../components/ContactUs"
 import CreationSection from "../components/CreationSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import PackagesPrix from "../components/PackagesPrix"
 import PourquoiNous from "../components/PourquoiNous"
 import RoadMap from "../components/RoadMap"
 import SectionUn from "../components/SectionUn"
@@ -16,13 +17,14 @@ function LandingPage() {
             <Header />
         </header>
 
-        <main className="flex flex-col max-sm:px-0 bg-[#EBF2FA]">
+        <main className="flex flex-col max-sm:px-0 bg-[#FFFFFF]">
            <SectionUn />
            <Services />
            <SkillsSection />
            <RoadMap />
            <Temoignage />
            <CreationSection />
+           <PackagesPrix />
            <PourquoiNous />
            <ContactUs />
         </main>
