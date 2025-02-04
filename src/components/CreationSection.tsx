@@ -24,7 +24,7 @@ function CreationSection() {
   
         ].map((creation, index) => (
           <motion.div className="flex justify-center items-center max-sm:px-5 md:px-1 lg:px-1 2xl:px-2" 
-          initial={{opacity:0, x:-50}} animate={isInView ? {opacity:1, x:0}:{}} transition={{
+          initial={{opacity: 0, x:-50}} animate={isInView ? {opacity: 1, x:0 }: {}} transition={{
            duration: 0.5,
            delay: index * 0.3,
            ease: "easeOut",
