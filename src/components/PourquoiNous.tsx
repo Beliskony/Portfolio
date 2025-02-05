@@ -5,13 +5,13 @@ const PourquoiNous = () => {
           <div className="w-[60%] flex flex-col text-left justify-between items-center gap-y-5 md:w-[70%] max-sm:w-full lg:px-20">
                 <h1 className="text-3xl w-full text-left font-bold text-[#0B162C] underline max-sm:text-xl">Pourquoi choisir Digital-Gick ?</h1>
                 <div className="flex flex-col justify-center items-left w-full">
-                    <p className="w-[75%] text-left max-sm:w-full">Lorem ipsum dolor sit amet. Ut veritatis iste cum commodi nostrum ut rerum inventore! Sed omnis nemo
-                         aut nemo aspernatur vel aspernatur dicta et dolores harum quo amet expedita.</p>
+                    <p className="w-[75%] text-left max-sm:w-full">Un site moderne, rapide et sur mesure, conçu avec passion et expertise. Ne laissez pas votre présence en ligne au hasard, faites confiance à des professionnels.</p>
                     <ul className='list-image-[url("/images/doubleCheck.png")] list-inside text-xl font-bold text-[#0B162C] mt-3 justify-center items-center w-full grid grid-cols-2 md:gap-x-4 max-sm:grid-cols-1'>
-                        <li>Clean Achitecture</li>
-                        <li>Clean Code</li>
-                        <li>Maintenable sur une longue durée</li>
-                        <li>gestion de SEO et mot-clés</li>
+                        <li>Solutions Personnalisées</li>
+                        <li>Expertise & Créativité</li>
+                        <li>Sites Performants & Optimisés</li>
+                        <li>Accompagnement et Support</li>
+                        <li>Des Tarifs Adaptés</li>
                     </ul>
                 </div>
           </div>

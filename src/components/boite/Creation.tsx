@@ -1,7 +1,7 @@
 interface ProjetCreation{
     image: string;
     titre?: string;
-    textExplicatif: string;
+    textExplicatif?: string;
 }
 
 const Creation: React.FC <ProjetCreation>=({image,titre,textExplicatif}) => {
