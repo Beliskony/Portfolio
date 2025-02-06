@@ -1,4 +1,5 @@
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const ContactUs = () => {
         contact:"",
         message:"", 
     })
+    
+    const [status, setStatus] = useState("");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -15,9 +18,16 @@ const ContactUs = () => {
 
     const envoie = (e: React.FormEvent) => {
         e.preventDefault();
-        const mailtoLien = `mailto:nguessanaxel21@gmail.com?subject= Message ${encodeURIComponent(formData.nom)}
-        &body=${encodeURIComponent(formData.message)}&contact=${encodeURIComponent(formData.contact)}%0D%0A%0D%0AEmail: ${encodeURIComponent(formData.email)}`;
-        window.location.href = mailtoLien;
+        setStatus("envoi en cours")
+
+        emailjs.send(
+          "service_0l9vtvp",
+          "template_5vbohud",
+          formData,
+          "BWC3FvpTi2fyHBRro"
+        )
+        .then(() => setStatus("envoyé avec succès"))
+        .catch(() => setStatus("erreur lorss de l'envoie"))
     }
 
   return (
@@ -68,12 +78,11 @@ const ContactUs = () => {
                  className="w-full h-36 p-2 border border-[#939597] resize-none rounded-md max-sm:w-full shadow-xl">
                 </textarea>
             </div>
-            <div className="flex flex-row items-center space-x-3 justify-center w-full h-14 text-xl text-white font-bold bg-[#0B162C] hover:bg-[#5FC2BA] rounded-2xl">
-                <button type="submit">
+                <button type="submit" className="flex flex-row items-center space-x-3 justify-center w-full h-14 text-xl text-white font-bold bg-[#0B162C] hover:bg-[#5FC2BA] rounded-2xl">
                     Envoyer
+                  <img src="https://img.icons8.com/?size=100&id=7874&format=png&color=FFFFFF" className="h-9 w-9"/>
                 </button>
-                <img src="https://img.icons8.com/?size=100&id=7874&format=png&color=FFFFFF" className="h-9 w-9"/>
-            </div>
+                {status && <p className="text-[#0B162C]">{status}</p>}
             </form>
         </div>
 
