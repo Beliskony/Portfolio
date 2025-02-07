@@ -29,16 +29,20 @@ export default function Footer() {
         </div>
 
         <div className='w-[30%] flex flex-row gap-x-5 justify-center max-sm:w-full max-sm:gap-x-10'>
-              <a href='https://www.facebook.com/axel.nguessan.167'>
+              <a href='https://www.facebook.com/axel.nguessan.167' target="_blank">
                 <img src='/images/facebook.png' className='h-10 w-10 md:h-7 md:w-7'/>
               </a>
 
-              <a href='https://www.linkedin.com/in/axel-sylvain-n-guessan-a46661291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
+              <a href='https://www.linkedin.com/in/axel-sylvain-n-guessan-a46661291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' target="_blank">
                 <img src='/images/linkedin.png' className='h-10 w-10 md:h-7 md:w-7'/>
               </a>
 
-              <a href='#'>
-                <img src='/images/X.png' className='h-10 w-10 md:h-7 md:w-7'/>
+              <a href='http://wa.me/+2250788557370' target="_blank">
+                <img src='/images/whatsapp.png' className='h-10 w-10 md:h-7 md:w-7'/>
+              </a>
+
+              <a href='tel:+2250788557370' target="_blank">
+                <img src='/images/call.png' className='h-10 w-10 md:h-7 md:w-7'/>
               </a>
         </div>
 

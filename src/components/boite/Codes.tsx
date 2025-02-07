@@ -7,25 +7,25 @@ const Codes = () => {
                         max-sm:flex-col max-sm:gap-y-4'>
 
                     <CardPrice typeSite='Site Vitrine'
-                               prix='250.000'
-                               texte='idéal pour présenter et mettre en valeur votre entreprise, boutique, activités ...'
-                               pointForts={['code clean','maintenabilité', 'flexibité', ]}
+                               prix='200.000'
+                               texte='Idéal pour présenter et mettre en valeur votre entreprise, profil personnel'
+                               pointForts={['Code clean','Maintenabilité', 'Flexibité', 'Design Moderne' ]}
                                bgCouleur='black'
                                texteCouleur='white'
                                populaire={true}/>
 
                     <CardPrice typeSite='Site E-commerce'
-                               prix='450.000'
-                               texte='idéal pour présenter et mettre en valeur votre entreprise, boutique, activités ...'
-                               pointForts={['code clean','maintenabilité', 'flexibité', ]}
+                               prix='650.000'
+                               texte="Parfait pour la mise en valeur et l'expension votre boutique et vos articles"
+                               pointForts={['Code clean','Maintenabilité', 'Flexibité','back-end solide', 'Bonne gestion des articles' ]}
                                bgCouleur='black'
                                texteCouleur='white'
                                />
 
                     <CardPrice typeSite='Site Portfolio'
-                               prix='200.000'
-                               texte='idéal pour présenter et mettre en valeur votre entreprise, boutique, activités ...'
-                               pointForts={['code clean','maintenabilité', 'flexibité', ]}
+                               prix='250.000'
+                               texte='Idéal pour présenter et mettre en valeur vos competences, vécus et projets'
+                               pointForts={['Code clean','Maintenabilité', 'Flexibité', 'Design personnalisé', 'Attrayance', 'UI/UX' ]}
                                bgCouleur='black'
                                texteCouleur='white'
                                populaire={true}/>

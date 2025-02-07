@@ -16,7 +16,7 @@ const Wordpress = () => {
                                populaire={true}/>
 
                     <CardPrice typeSite='Site E-commerce'
-                               prix='300.000'
+                               prix='370.000'
                                texte='Avec wordpress la conception est rapide et offres de nombreuses perspectives '
                                pointForts={["Simple d'utilisation", "S'adapte aux besoins", "Maintence facile", "Hebergement 1 an", "10 mailsPro"]}
                                bgCouleur='white'
