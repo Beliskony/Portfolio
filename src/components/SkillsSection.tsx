@@ -1,50 +1,107 @@
-import CompetencesBox from "./skills/CompetencesBox"
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import CompetencesBox from "./skills/CompetencesBox";
+import { skillsData } from "../data/SkillsData";
 
 function SkillsSection() {
-  const sectionRef = useRef(null)
+  const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {
-     once:true,// L'animation se joue une seule fois
-    amount: 0.2, // Déclenchement lorsque 20% de la section est visible
-  })
+    once: true,
+    amount: 0.1,
+  });
+
+  
 
   return (
     <section
       id="skills"
       ref={sectionRef}
-      className="w-full my-20 flex flex-col justify-center items-center border-[#0B162C] lg:px-5 max-sm:px-5 md:px-1">
+      className="relative py-20 lg:py-32 bg-gray-50 overflow-hidden"
+    >
+      {/* Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-20" />
+      <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-20" />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <motion.div
+          className="text-center mb-16 lg:mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.span
+            className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            Mes Compétences
+          </motion.span>
+          <motion.h2
+            className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Mon{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              expertise
+            </span>
+          </motion.h2>
+          <motion.p
+            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            Un ensemble complet de technologies et méthodologies pour réaliser 
+            vos projets web et mobiles de A à Z.
+          </motion.p>
+        </motion.div>
 
-      <div className="w-full text-center mb-10">
-        <h2 className="underline text-[#0B162C] font-bold lg:text-[50px] lg:text-4xl md:text-3xl max-sm:text-3xl">Compétences</h2>
-      </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 max-sm:grid-cols-1 gap-y-5 gap-x-2">
-        {[
-          { nom: "React", image: "/images/react.png", texte:"React est une bibliothèque pour des interfaces utilisateurs web et natives. " },
-          { nom: "TypeScript", image: "/images/typescript.png", texte:"TypeScript est un langage de programmation fortement typé qui s'appuie sur JavaScript," },
-          { nom: "HTML", image: "/images/html.png", texte:"Le HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour écrire les pages web"},
-          { nom: "CSS", image: "/images/css.png", texte:"CSS est utilisé pour mettre en forme et organiser le contenu sur page web" },
-          { nom: "SQL", image: "/images/sql.png", texte:"Le SQL (Structured Query Language) est un langage permettant de communiquer avec une base de données." },
-          { nom: "React Native", image: "/images/react.png", texte:"React Native apporte les meilleurs éléments du développement avec React au développement natif."},
-          { nom: "Tailwind CSS", image: "/images/tailwindcss.png", texte:"Tailwind CSS fonctionne en analysant tous vos fichiers HTML, composants JavaScript et tous les autres modèles pour les noms de classe" },
-          { nom: "WordPress", image: "/images/wordpress.png", texte:"WordPress est le moyen le plus simple et le plus populaire de créer votre propre site Web ou blog. " },
-        ].map((skill, index) => (
-          <motion.div
-            key={skill.nom}
-            className="flex w-full justify-center items-center max-sm:px-5 md:px-2"
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{
-              duration: 0.5,
-              delay: index * 0.3,
-              ease: "easeOut",
-            }}>
-            <CompetencesBox nom={skill.nom} image={skill.image} texte={skill.texte} />
-          </motion.div>
-        ))}
+        {/* Skills Grid */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+        >
+          {skillsData.map((skill) => (
+            <motion.div
+              key={skill.nom}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    duration: 0.6,
+                    ease: "easeOut"
+                  }
+                }
+              }}
+            >
+              <CompetencesBox 
+                nom={skill.nom} 
+                image={skill.image} 
+                texte={skill.texte} 
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+
       </div>
     </section>
-  )
+  );
 }
 
-export default SkillsSection
+export default SkillsSection;

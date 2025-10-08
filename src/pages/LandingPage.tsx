@@ -2,13 +2,11 @@ import ContactUs from "../components/ContactUs"
 import CreationSection from "../components/CreationSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import PackagesPrix from "../components/PackagesPrix"
-import PourquoiNous from "../components/PourquoiNous"
-import RoadMap from "../components/RoadMap"
 import SectionUn from "../components/SectionUn"
 import Services from "../components/Services"
 import SkillsSection from "../components/SkillsSection"
 import Temoignage from "../components/Temoignage"
+import ProcessSection from "../components/ProcessSection"
 
 function LandingPage() {
   return (
@@ -21,15 +19,13 @@ function LandingPage() {
            <SectionUn />
            <Services />
            <SkillsSection />
-           <RoadMap />
            <Temoignage />
            <CreationSection />
-           <PackagesPrix />
-           <PourquoiNous />
+           <ProcessSection />
            <ContactUs />
         </main>
 
-        <footer className="w-full flex bg-white items-center px-10">
+        <footer className="w-full">
             <Footer />
         </footer>
     </html>
