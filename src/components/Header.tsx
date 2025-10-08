@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Home, Code, Folder, Mail } from "lucide-react";
+import { Menu, X, Code, Folder, Mail } from "lucide-react";
 import ToggleMode from "./ToggleMode";
 
 const Header: React.FC = () => {
@@ -34,9 +34,8 @@ const Header: React.FC = () => {
   };
 
   const navItems = [
-    { href: "#presentation", label: "Accueil", icon: Home },
+    { href: "#creation", label: "Projets", icon: Folder },
     { href: "#skills", label: "Compétences", icon: Code },
-    { href: "#projects", label: "Projets", icon: Folder },
     { href: "#contact", label: "Contact", icon: Mail },
   ];
 
