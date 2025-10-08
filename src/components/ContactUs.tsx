@@ -58,13 +58,13 @@ const ContactUs = () => {
   };
 
   return (
-    <section id='contact' className="relative min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden">
+    <section id='contact' className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 dark:from-black dark:via-black dark:to-black overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
       
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 xl:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Left Column - Contact Info & Text */}
@@ -88,7 +88,7 @@ const ContactUs = () => {
               </motion.span>
               
               <motion.h2
-                className="text-4xl lg:text-6xl font-bold"
+                className="text-4xl xl:text-6xl font-bold"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -171,7 +171,7 @@ const ContactUs = () => {
             viewport={{ once: true }}
           >
             {/* Form Container */}
-            <div className="relative bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 lg:p-12 shadow-2xl">
+            <div className="relative bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 xl:p-12 shadow-2xl">
               
               {/* Form Header */}
               <div className="text-center mb-8">
@@ -329,14 +329,14 @@ const ContactUs = () => {
                     name="formule"
                     value={formData.formule}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all duration-200"
+                    className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all duration-200"
                   >
-                    <option value="Personaliser">Projet personnalisé</option>
-                    <option value="Site Vitrine">Site vitrine</option>
-                    <option value="Portfolio">Portfolio</option>
-                    <option value="E-commerce">E-commerce</option>
-                    <option value="Application web">Application web</option>
-                    <option value="Refonte">Refonte de site</option>
+                    <option value="Personaliser" className="text-gray-900">Projet personnalisé</option>
+                    <option value="Site Vitrine" className="text-gray-900">Site vitrine</option>
+                    <option value="Portfolio" className="text-gray-900">Portfolio</option>
+                    <option value="E-commerce" className="text-gray-900">E-commerce</option>
+                    <option value="Application web" className="text-gray-900">Application web</option>
+                    <option value="Refonte" className="text-gray-900">Refonte de site</option>
                   </select>
                 </motion.div>
 

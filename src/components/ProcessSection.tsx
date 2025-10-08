@@ -49,7 +49,7 @@ const ProcessSection = () => {
   return (
     <section 
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-gray-50 overflow-hidden"
+      className="relative py-20 lg:py-32 bg-gray-50 dark:bg-black overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
@@ -74,7 +74,7 @@ const ProcessSection = () => {
           </motion.span>
           
           <motion.h2
-            className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-gray-200 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -86,7 +86,7 @@ const ProcessSection = () => {
           </motion.h2>
           
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -109,7 +109,7 @@ const ProcessSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
               >
                 {/* Step Number */}
-                <div className="relative inline-flex items-center justify-center mb-6">
+                <div className="relative inline-flex items-center justify-center mb-6 dark:border-2">
                   <div className="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center group-hover:shadow-xl transition-all duration-300">
                     <IconComponent className="w-8 h-8 text-blue-600" />
                   </div>
@@ -119,11 +119,11 @@ const ProcessSection = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-3">
                   {step.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed mb-3">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
                   {step.description}
                 </p>
                 

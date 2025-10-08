@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Home, Code, Folder, Mail } from "lucide-react";
+import ToggleMode from "./ToggleMode";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,47 +45,55 @@ const Header: React.FC = () => {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-lg py-4"
-            : "bg-white/90 backdrop-blur-md py-6 lg:bg-transparent lg:backdrop-blur-none"
+            ? "bg-white/90 backdrop-blur-md shadow-lg py-4 dark:bg-black/80"
+            : "bg-white/90 backdrop-blur-md py-6 lg:bg-transparent lg:backdrop-blur-none dark:bg-black/80"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between px-4">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a
-                href="#"
-                className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
+                href="/"
+                className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
               >
                 Digital-Gick
               </a>
             </div>
 
             {/* Navigation Desktop */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden sm:flex items-center md:space-x-4 lg:space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200 relative group"
+                  className="text-gray-700 dark:text-white hover:text-purple-600 font-medium transition-colors duration-200 relative group"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-200 group-hover:w-full" />
                 </a>
               ))}
+
             </div>
 
+            {/* Contrôles Desktop */}
+            <div className="hidden sm:flex items-center gap-4">
+              <ToggleMode />
+            </div>
+ 
+
             {/* Bouton Menu Mobile */}
-            <div className="lg:hidden">
+            <div className="flex sm:hidden items-center gap-3">
+
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-3 rounded-xl bg-white shadow-lg hover:shadow-xl border border-gray-100 transition-all duration-200"
+                className="shadow-lg hover:shadow-xl transition-all duration-200"
                 aria-label="Toggle menu"
               >
                 {isOpen ? (
-                  <X size={24} className="text-gray-700" />
+                  <X size={32} className="text-gray-700" />
                 ) : (
-                  <Menu size={24} className="text-gray-700" />
+                  <Menu size={32} className="text-gray-700 dark:text-gray-200" />
                 )}
               </button>
             </div>
@@ -154,6 +163,9 @@ const Header: React.FC = () => {
                   <span className="text-green-600 text-sm font-medium">En ligne</span>
                 </div>
               </div>
+
+               {/* Dark Mode Toggle Mobile */}
+              <ToggleMode />
               
               <button 
                 onClick={() => {

@@ -13,15 +13,12 @@ function SkillsSection() {
   
 
   return (
-    <section
-      id="skills"
-      ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-gray-50 overflow-hidden"
-    >
+    <section id="skills" ref={sectionRef} className="relative py-20 xl:py-32 dark:bg-black overflow-hidden">
+
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
-      <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-20" />
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-20" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 dark:bg-black rounded-full blur-3xl opacity-20" />
+      <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-200 dark:bg-black rounded-full blur-3xl opacity-20" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -40,7 +37,7 @@ function SkillsSection() {
             Mes Compétences
           </motion.span>
           <motion.h2
-            className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-gray-200 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -51,7 +48,7 @@ function SkillsSection() {
             </span>
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -63,7 +60,7 @@ function SkillsSection() {
 
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+          className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={{
@@ -75,9 +72,9 @@ function SkillsSection() {
             }
           }}
         >
-          {skillsData.map((skill) => (
+          {skillsData.map((skill, index) => (
             <motion.div
-              key={skill.nom}
+              key={index}
               variants={{
                 hidden: { opacity: 0, y: 30 },
                 visible: { 

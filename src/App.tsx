@@ -1,10 +1,14 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage.tsx'
 import './App.css'
 
 function App() {
-
   return (
-    <p className='text-4xl text-yellow-400'> bonjour </p>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

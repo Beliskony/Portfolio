@@ -10,25 +10,19 @@ import ProcessSection from "../components/ProcessSection"
 
 function LandingPage() {
   return (
-    <html className="w-full h-full flex flex-col justify-start">
-        <header className="h-20">
-            <Header />
-        </header>
+    <>
+       <Header />
 
-        <main className="flex flex-col max-sm:px-0 bg-[#FFFFFF]">
-           <SectionUn />
-           <Services />
-           <SkillsSection />
-           <Temoignage />
-           <CreationSection />
-           <ProcessSection />
-           <ContactUs />
-        </main>
+       <SectionUn />
+       <CreationSection />
+       <SkillsSection />
+       <Services />
+       <ProcessSection />
+       <Temoignage />
+       <ContactUs />
 
-        <footer className="w-full">
-            <Footer />
-        </footer>
-    </html>
+      <Footer />
+  </>
   )
 }
 

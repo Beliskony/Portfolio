@@ -16,12 +16,12 @@ function Temoignage() {
   return (
     <section 
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden"
+      className="relative py-20 xl:py-32 bg-gradient-to-br from-gray-900 dark:bg-black dark:to-black to-gray-800 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 dark:bg-black rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 dark:bg-black rounded-full blur-3xl animate-pulse delay-1000" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -54,7 +54,7 @@ function Temoignage() {
           </motion.h2>
           
           <motion.p
-            className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-300  max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -105,14 +105,14 @@ function Temoignage() {
 
         {/* Stats Section */}
         <motion.div
-          className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20 pt-12 border-t border-white/10"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-5 pt-5 border-t border-white/10"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           {[
-            { number: "50+", label: "Projets Réalisés" },
-            { number: "45+", label: "Clients Satisfaits" },
+            { number: "10+", label: "Projets Réalisés" },
+            { number: "8+", label: "Clients Satisfaits" },
             { number: "98%", label: "Taux de Satisfaction" },
             { number: "24h", label: "Support Réactif" }
           ].map((stat, index) => (

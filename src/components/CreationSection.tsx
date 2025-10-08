@@ -19,7 +19,7 @@ function CreationSection() {
     <section 
       id="creation" 
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-white overflow-hidden"
+      className="relative py-20 lg:py-32 bg-white dark:bg-black overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
@@ -45,7 +45,7 @@ function CreationSection() {
           </motion.span>
           
           <motion.h2
-            className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-gray-200 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -57,7 +57,7 @@ function CreationSection() {
           </motion.h2>
           
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -82,7 +82,7 @@ function CreationSection() {
           }}
         >
           <motion.h3
-            className="text-2xl lg:text-3xl font-bold text-gray-900 mb-12 text-center"
+            className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-gray-200 mb-12 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -94,7 +94,7 @@ function CreationSection() {
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={project.id}
-                className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden ${
+                className={`group relative bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden ${
                   index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                 } flex flex-col lg:flex-row items-stretch`}
                 variants={{
@@ -148,12 +148,12 @@ function CreationSection() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-200">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-gray-200 mb-4 group-hover:text-blue-600 transition-colors duration-200">
                     {project.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                     {project.description}
                   </p>
 
@@ -175,14 +175,14 @@ function CreationSection() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                      className="flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
                     >
                       <Eye size={18} />
                       Voir le projet
                     </a>
                     <a
                       href={project.github}
-                      className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors duration-200"
+                      className="flex items-center gap-2 px-6 py-3 border-2 dark:bg-white border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors duration-200"
                     >
                       <Github size={18} />
                       Code source
@@ -208,7 +208,7 @@ function CreationSection() {
           }}
         >
           <motion.h3
-            className="text-2xl lg:text-3xl font-bold text-gray-900 mb-12 text-center"
+            className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-gray-200 mb-12 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -220,7 +220,7 @@ function CreationSection() {
             {otherProjects.map((project) => (
               <motion.div
                 key={project.id}
-                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col"
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col"
                 variants={{
                   hidden: { opacity: 0, y: 40 },
                   visible: { 
@@ -247,7 +247,7 @@ function CreationSection() {
                       href={project.link}
                       className="p-3 bg-white rounded-full hover:scale-110 transition-transform duration-200"
                     >
-                      <ExternalLink size={18} className="text-gray-900" />
+                      <ExternalLink size={18} className="text-gray-900 dark:text-gray-200" />
                     </a>
                     <a
                       href={project.github}
@@ -264,11 +264,11 @@ function CreationSection() {
                     {project.category}
                   </span>
                   
-                  <h4 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-200">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-gray-200 mb-2 group-hover:text-purple-600 transition-colors duration-200">
                     {project.title}
                   </h4>
                   
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-1">
                     {project.description}
                   </p>
 

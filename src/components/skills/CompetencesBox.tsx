@@ -10,7 +10,7 @@ interface Competences {
 const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
   return (
     <motion.div
-      className="group relative bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col"
+      className="group relative bg-white rounded-2xl p-6 xl:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col"
       whileHover={{ 
         scale: 1.05,
         y: -8
@@ -62,23 +62,6 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
           </motion.p>
         )}
 
-        {/* Learn More Indicator */}
-        <motion.div 
-          className="flex items-center justify-center gap-2 text-blue-600 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300"
-          whileHover={{ x: 4 }}
-        >
-          <span>En savoir plus</span>
-          <motion.svg 
-            width="16" 
-            height="16" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor"
-            className="group-hover:translate-x-1 transition-transform duration-200"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </motion.svg>
-        </motion.div>
       </div>
 
       {/* Shine Effect on Hover */}
