@@ -36,7 +36,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      url: "mailto:axel@digital-gick.com",
+      url: "mailto:nguessanaxel21@gmail.com",
       icon: <Mail className="w-5 h-5" />
     },
     {

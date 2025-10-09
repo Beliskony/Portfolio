@@ -9,18 +9,11 @@ interface Competences {
 
 const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
   return (
+  <div className="group relative w-full h-full">
     <motion.div
-      className="group relative bg-black dark:bg-white rounded-2xl p-6 xl:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col"
-      whileHover={{ 
-        scale: 1.05,
-        y: -8
-      }}
-      transition={{ 
-        type: "spring", 
-        stiffness: 300,
-        damping: 20
-      }}
-    >
+      className="relative bg-black dark:bg-white rounded-2xl p-6 xl:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col overflow-hidden"
+      whileHover={{ scale: 1.05, y: -5 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }} >
       {/* Hover Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
       
@@ -44,7 +37,7 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
 
         {/* Title */}
         <motion.h3 
-          className="text-xl lg:text-2xl font-bold text-white dark:text-gray-900 group-hover:text-gray-800 transition-colors duration-200"
+          className="text-xl lg:text-2xl font-bold text-white dark:text-gray-900 transition-colors duration-200"
           layout
         >
           {nom}
@@ -67,6 +60,7 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
       {/* Shine Effect on Hover */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
     </motion.div>
+  </div>
   );
 };
 

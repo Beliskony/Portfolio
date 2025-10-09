@@ -94,14 +94,14 @@ const Hero = () => {
 
               {/* Social Links */}
               <div className="flex gap-4">
-                <a href="#" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
-                  <Github size={20} />
+                <a href="https://github.com/Beliskony" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
+                  <Github size={20} className="dark:invert"/>
                 </a>
-                <a href="#" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
-                  <Linkedin size={20} />
+                <a href="https://www.linkedin.com/in/axel-sylvain-n-guessan-a46661291" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
+                  <Linkedin size={20} className="dark:invert"/>
                 </a>
-                <a href="#" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
-                  <Mail size={20} />
+                <a href="mailto:nguessanaxel21@gmail.com" className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200">
+                  <Mail size={20} className="dark:invert"/>
                 </a>
               </div>
             </motion.div>
@@ -117,7 +117,7 @@ const Hero = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-lg opacity-20 animate-pulse" />
                 
                 {/* Carte principale */}
-                <div className="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div className="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden md:mb-24 xl:mb-0">
                   {/* Placeholder pour image - À remplacer par votre photo */}
                   <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img src="/images/profil.webp" alt="Nguessan Axel Sylvain" className="object-cover object-top h-[360px] w-[360px] md:h-[520px] md:w-[520px] xl:h-[520px] xl:w-[520px]"/>

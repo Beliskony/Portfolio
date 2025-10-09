@@ -1,7 +1,7 @@
   export const projectsData = [
     {
       id: 1,
-      image: "/images/siteDeux.png",
+      image: "/images/siteDeux.webp",
       title: "Escargot Shop",
       description: "Site e-commerce moderne spécialisé dans la vente de produits à base d'escargots avec interface intuitive et sécurisée.",
       category: "E-commerce",
@@ -12,7 +12,7 @@
     },
     {
       id: 2,
-      image: "/images/siteUn.png",
+      image: "/images/siteUn.webp",
       title: "Da Prospera SARL",
       description: "Site vitrine corporate pour une entreprise de services, mettant en avant leur expertise et valeurs.",
       category: "Corporate",
@@ -23,7 +23,7 @@
     },
     {
       id: 3,
-      image: "/images/siteTrois.png",
+      image: "/images/siteTrois.webp",
       title: "Sugwave",
       description: "Plateforme moderne de streaming musical avec interface immersive et expérience utilisateur optimisée.",
       category: "Streaming",
