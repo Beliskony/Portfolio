@@ -82,12 +82,14 @@ const Hero = () => {
 
               <div className="flex gap-4 ">
                 <button onClick={scrollToNext}
-                 className="px-2 md:px-8 py-4 lg:w-52 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-200 shadow-lg" >
+                 className="px-2 md:px-8 py-4 lg:w-52 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-200 shadow-lg cursor-pointer" >
                   Voir mon travail
                 </button>
-                <button className="px-2 md:px-8 py-4 lg:w-52 border-2 border-gray-300 text-gray-700 dark:bg-white font-semibold rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200">
+                <a href="/documents/CVAxelSylvain.pdf" 
+                download="Cv_Axel_Sylvain.Pdf"
+                className="px-2 md:px-8 py-4 lg:w-52 border-2 border-gray-300 text-gray-700 dark:bg-white font-semibold rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 cursor-pointer">
                   Télécharger CV
-                </button>
+                </a>
               </div>
 
               {/* Social Links */}
@@ -118,7 +120,7 @@ const Hero = () => {
                 <div className="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
                   {/* Placeholder pour image - À remplacer par votre photo */}
                   <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img src="/images/profil.webp" className="object-cover object-top h-[360px] w-[360px] md:h-[520px] md:w-[520px] xl:h-[520px] xl:w-[520px]"/>
+                    <img src="/images/profil.webp" alt="Nguessan Axel Sylvain" className="object-cover object-top h-[360px] w-[360px] md:h-[520px] md:w-[520px] xl:h-[520px] xl:w-[520px]"/>
                   </div>
                   
                   {/* Badges de compétences flottants */}
@@ -158,7 +160,7 @@ const Hero = () => {
       >
         <button
           onClick={scrollToNext}
-          className="flex flex-col items-center text-gray-400 hover:text-gray-600 transition-colors duration-200 group"
+          className="flex flex-col items-center text-gray-400 hover:text-gray-600 transition-colors duration-200 group cursor-pointer"
         >
           <span className="text-sm font-medium mb-2 group-hover:translate-y-1 transition-transform">
             Explorer

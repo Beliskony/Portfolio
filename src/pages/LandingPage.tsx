@@ -17,8 +17,8 @@ function LandingPage() {
        <CreationSection />
        <SkillsSection />
        <Services />
-       <ProcessSection />
        <Temoignage />
+       <ProcessSection />
        <ContactUs />
 
       <Footer />

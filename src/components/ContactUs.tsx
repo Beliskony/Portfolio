@@ -125,13 +125,13 @@ const ContactUs = () => {
                   icon: Mail,
                   label: "Email",
                   value: "axel@digital-gick.com",
-                  href: "mailto:axel@digital-gick.com"
+                  href: "mailto:nguessanaxel21@gmail.com"
                 },
                 {
                   icon: Phone,
                   label: "Téléphone",
-                  value: "+33 XX XX XX XX",
-                  href: "tel:+33XXXXXXXXX"
+                  value: "+225 07 88 55 73 70",
+                  href: "tel:+2250788557270"
                 },
                 {
                   icon: MapPin,

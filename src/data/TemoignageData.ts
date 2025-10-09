@@ -6,12 +6,6 @@ export  const testimonialsData = [
       bg: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
     },
     {
-      nom: "Prince",
-      image: "https://i.pinimg.com/474x/11/75/67/1175675b1bfb3fd9d5502b18794b7037.jpg",
-      texte: "Un service impeccable ! Mon site a été conçu avec professionnalisme, rapidité et une attention aux détails impressionnante.",
-      bg: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
-    },
-    {
       nom: "Touré",
       image: "https://i.pinimg.com/474x/d5/88/a3/d588a3ec000545db4b72ddc1316d0376.jpg",
       texte: "Une expérience exceptionnelle ! Collaboration transparente avec d'excellents conseils. Un vrai plaisir de travailler ensemble.",

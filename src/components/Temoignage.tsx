@@ -16,7 +16,7 @@ function Temoignage() {
   return (
     <section 
       ref={sectionRef}
-      className="relative py-20 xl:py-32 bg-gradient-to-br from-gray-900 dark:bg-black dark:to-black to-gray-800 overflow-hidden"
+      className="relative py-20 xl:py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 dark:from-black dark:via-black dark:to-black overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />

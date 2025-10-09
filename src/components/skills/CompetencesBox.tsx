@@ -10,7 +10,7 @@ interface Competences {
 const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
   return (
     <motion.div
-      className="group relative bg-white rounded-2xl p-6 xl:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col"
+      className="group relative bg-black dark:bg-white rounded-2xl p-6 xl:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-transparent transition-all duration-300 h-full flex flex-col"
       whileHover={{ 
         scale: 1.05,
         y: -8
@@ -35,7 +35,7 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
           <img 
             src={image} 
             alt={nom}
-            className="w-12 h-12 object-contain transition-all duration-300 group-hover:scale-110" 
+            className="w-12 h-12 object-contain transition-all duration-300 group-hover:scale-110 text-black dark:text-gray-200" 
           />
           
           {/* Hover Effect Ring */}
@@ -44,7 +44,7 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
 
         {/* Title */}
         <motion.h3 
-          className="text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors duration-200"
+          className="text-xl lg:text-2xl font-bold text-white dark:text-gray-900 group-hover:text-gray-800 transition-colors duration-200"
           layout
         >
           {nom}
@@ -53,7 +53,7 @@ const CompetencesBox: React.FC<Competences> = ({ nom, image, texte }) => {
         {/* Description */}
         {texte && (
           <motion.p 
-            className="text-gray-600 leading-relaxed text-sm lg:text-base flex-1"
+            className="text-gray-400 dark:text-gray-600 leading-relaxed text-sm lg:text-base flex-1"
             initial={{ opacity: 0.8 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
