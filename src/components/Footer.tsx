@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Heart, ArrowUp } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,9 +9,8 @@ export default function Footer() {
   };
 
   const navItems = [
-    { href: "#presentation", label: "Accueil" },
-    { href: "#skills", label: "Compétences" },
     { href: "#creation", label: "Projets" },
+    { href: "#skills", label: "Compétences" },
     { href: "#contact", label: "Contact" }
   ];
 
@@ -47,9 +46,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
+    <footer className="relative bg-white text-black dark:bg-black dark:text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
+      {/* Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 dark:bg-black rounded-full blur-3xl opacity-20" />
+      <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-200 dark:bg-black rounded-full blur-3xl opacity-20" />
       
       {/* Main Footer Content */}
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -71,11 +74,11 @@ export default function Footer() {
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                   Digital-Gick
                 </h3>
-                <p className="text-gray-400 text-sm">Développeur Front-end</p>
+                <p className="text-gray-800 dark:text-gray-400 text-sm">Développeur Full-stack</p>
               </div>
             </div>
             
-            <p className="text-gray-400 leading-relaxed mb-6">
+            <p className="text-gray-800 dark:text-gray-400 leading-relaxed mb-6">
               Je crée des expériences web modernes et performantes qui transforment 
               vos idées en réalités digitales exceptionnelles.
             </p>
@@ -84,15 +87,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span className="text-sm">axel@digital-gick.com</span>
+                <span className="text-sm text-gray-800 dark:text-gray-400">nguessanaxel21@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone className="w-4 h-4 text-green-400" />
-                <span className="text-sm">+225 07 88 55 73 70</span>
+                <span className="text-sm text-gray-800 dark:text-gray-400">+225 07 88 55 73 70</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">Disponible en remote</span>
+                <span className="text-sm text-gray-800 dark:text-gray-400">Disponible en remote</span>
               </div>
             </div>
           </motion.div>
@@ -104,13 +107,13 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-6 text-white">Navigation</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800 dark:text-white">Navigation</h4>
             <ul className="space-y-4">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-gray-800 dark:text-gray-400 hover:scale-105 transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <div className="w-1 h-1 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     {item.label}
@@ -127,13 +130,13 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-6 text-white">Services</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li className="hover:text-white transition-colors duration-200">Développement Front-end</li>
-              <li className="hover:text-white transition-colors duration-200">Applications React</li>
-              <li className="hover:text-white transition-colors duration-200">Sites E-commerce</li>
-              <li className="hover:text-white transition-colors duration-200">Refonte de sites</li>
-              <li className="hover:text-white transition-colors duration-200">UI/UX Design</li>
+            <h4 className="text-lg font-semibold mb-6 text-black dark:text-white">Services</h4>
+            <ul className="space-y-4 text-gray-800 dark:text-gray-400">
+              <li className="hover:scale-105 duration-200">Développement Front-end</li>
+              <li className="hover:scale-105 duration-200">Applications React</li>
+              <li className="hover:scale-105 duration-200">Sites E-commerce</li>
+              <li className="hover:scale-105 duration-200">Refonte de sites</li>
+              <li className="hover:scale-105 duration-200">UI/UX Design</li>
             </ul>
           </motion.div>
 
@@ -144,8 +147,8 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-6 text-white">Connectons-nous</h4>
-            <p className="text-gray-400 mb-6">
+            <h4 className="text-lg font-semibold mb-6 text-gray-800 dark:text-white">Connectons-nous</h4>
+            <p className="text-gray-800 dark:text-gray-400 mb-6">
               Discutons de votre prochain projet et créons quelque chose d'extraordinaire ensemble.
             </p>
             
@@ -157,7 +160,7 @@ export default function Footer() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-200"
+                  className="w-10 h-10 bg-white/5 backdrop-blur-sm border dark:border-white/10 border-gray-800 rounded-lg flex items-center justify-center text-gray-800 dark:text-gray-400 hover:bg-white/10 hover:border-white/20 transition-all duration-200"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -181,24 +184,14 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <motion.div
-          className="border-t border-white/10 mt-12 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4"
+          className="border-t dark:border-white/50 border-gray-900 mt-12 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="text-gray-400 text-sm flex items-center gap-2">
+          <div className="text-gray-800 dark:text-gray-400 text-sm flex items-center gap-2">
             <span>© {currentYear} Digital-Gick. Tous droits réservés.</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-          </div>
-          
-          <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors duration-200">
-              Politique de confidentialité
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-200">
-              Conditions d'utilisation
-            </a>
           </div>
         </motion.div>
       </div>
