@@ -16,7 +16,7 @@ const Services = () => {
       title: "Développement Front-end",
       description: "Création d'interfaces modernes et performantes avec React, TypeScript et Tailwind CSS. Des applications rapides, accessibles et optimisées pour une expérience utilisateur exceptionnelle.",
       icon: Code2,
-      features: ["React & Next.js", "TypeScript", "Tailwind CSS", "Performance", "Responsive Design"],
+      features: ["React", "TypeScript", "Tailwind CSS", "Performance", "Responsive Design", "etc..."],
       gradient: "from-blue-500 to-cyan-500",
       delay: 0.2
     },
@@ -25,16 +25,16 @@ const Services = () => {
       title: "Sites E-commerce",
       description: "Développement de boutiques en ligne modernes avec des fonctionnalités avancées de paiement, gestion de stock et expérience d'achat optimisée.",
       icon: ShoppingCart,
-      features: ["UI/UX E-commerce", "Paiements sécurisés", "Gestion produits", "SEO E-commerce", "Analytics"],
+      features: ["UI/UX E-commerce", "Paiements sécurisés", "Gestion produits", "SEO E-commerce", "Analytics", "etc..."],
       gradient: "from-purple-500 to-pink-500",
       delay: 0.4
     },
     {
       id: 3,
-      title: "Sites Vitrines",
+      title: "Sites Dynamiques & WebApp",
       description: "Conception de sites vitrines élégants qui représentent parfaitement votre marque et convertissent vos visiteurs en clients.",
       icon: Globe,
-      features: ["Design sur mesure", "SEO Optimisé", "Intégration CMS", "Hébergement", "Maintenance"],
+      features: ["Logique métier","Design sur mesure", "SEO Optimisé", "CleanArchitechture", "Intégration CMS", "Hébergement", "Maintenance", "etc..."],
       gradient: "from-green-500 to-emerald-500",
       delay: 0.6
     }

@@ -26,4 +26,11 @@ export const skillsData = [
     { id:14, nom: "Api Restful", image: "/icones/api.svg", texte: "Création et consommation d'API moderne" },
     { id:15, nom: "Conception", image: "/icones/web.svg", texte: "Architecture et design technique d'applications robustes et évolutives." },
     { id:16, nom: "Canvas", image: "/icones/canva.svg", texte: "Outil de modélisation d'affaires pour la planification stratégique de projets." },
+    { id: 18, nom: "Redux & Redux Toolkit", image: "/icones/redux.png", texte: "pour la gestion des états côté frontend" },
+    { id: 19, nom: "Docker", image: "/icones/docker.png", texte: "la conteneurisation d'applications" },
+    { id: 20, nom: "Vercel", image: "/icones/vercel.jpg", texte: "déploiement de sites web, même sans avoir de grandes notions en DevOps" },
+    { id: 21, nom: "Render", image: "/icones/render.png", texte: "déploiement de sites et applications web PAAS (Platform As A Service), simplifiant le processus de déploiement" },
+    { id: 22, nom: "LWS", image: "/icones/lws.png", texte: "Hébergeur mutualisé pour sites no-code et code" },
+    { id: 23, nom: "Clean Code", image: "/icones/cleanC.png", texte: "principes d'écriture de code maintenable et lisible" },
+    { id: 24, nom: "SOLID", image: "/icones/SOLID.png", texte: "principes de conception orientée objet pour un code robuste" }
   ];
