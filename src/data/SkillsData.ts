@@ -32,5 +32,6 @@ export const skillsData = [
     { id: 21, nom: "Render", image: "/icones/render.png", texte: "déploiement de sites et applications web PAAS (Platform As A Service), simplifiant le processus de déploiement" },
     { id: 22, nom: "LWS", image: "/icones/lws.png", texte: "Hébergeur mutualisé pour sites no-code et code" },
     { id: 23, nom: "Clean Code", image: "/icones/cleanC.png", texte: "principes d'écriture de code maintenable et lisible" },
-    { id: 24, nom: "SOLID", image: "/icones/SOLID.png", texte: "principes de conception orientée objet pour un code robuste" }
+    { id: 24, nom: "SOLID", image: "/icones/SOLID.png", texte: "principes de conception orientée objet pour un code robuste" },
+    { id: 25, nom: "Next.js", image: "/icones/next.png", texte: "framework React pour le déploiement de applications web" },
   ];

@@ -25,7 +25,7 @@
       id: 3,
       image: "/images/siteTrois.webp",
       title: "Sugwave",
-      description: "Plateforme moderne de streaming musical avec interface immersive et expérience utilisateur optimisée.",
+      description: "site avec une interface moderne et une expérience utilisateur fluide, pour une entreprise de BTP offrant des services de construction et de rénovation de qualité.",
       category: "Streaming",
       technologies: ["React", "TaildwindCss", "Framer Motion", "tailwindCss", "EmailJs"],
       link: "https://sugwave.vercel.app",
