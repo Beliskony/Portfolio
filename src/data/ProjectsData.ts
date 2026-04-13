@@ -26,7 +26,7 @@
       image: "/images/siteTrois.webp",
       title: "Sugwave",
       description: "site avec une interface moderne et une expérience utilisateur fluide, pour une entreprise de BTP offrant des services de construction et de rénovation de qualité.",
-      category: "Streaming",
+      category: "Site Vitrine",
       technologies: ["React", "TaildwindCss", "Framer Motion", "tailwindCss", "EmailJs"],
       link: "https://sugwave.vercel.app",
       github: "#",
